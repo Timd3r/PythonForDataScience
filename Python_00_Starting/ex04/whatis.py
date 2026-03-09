@@ -8,16 +8,17 @@ def whatis():
     except (IndexError):
         return
     try:
+        if not value.isdigit():
+            raise AssertionError("argument is not an integer")
         value = int(value)
         if (len(values) > 2):
-            print("AssertionError: more than one argument is provided")
-            return
+            raise AssertionError("more than one argument is provided")
         if (value % 2 == 0):
             print("I'm Even.")
         else:
             print("I'm Odd.")
-    except (ValueError):
-        print("AssertionError: argument is not an integer")
+    except AssertionError as e:
+        print(f"AssertionError: {e}")
 
 
 def main():
