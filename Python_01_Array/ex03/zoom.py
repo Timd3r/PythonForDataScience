@@ -30,14 +30,16 @@ def zoom(path: str, factor: int):
         plt.xlabel("X axis")
         plt.ylabel("Y axis")
         plt.show()
+        save_path = "Python_01_Array/images/zoomed_animal.jpeg"
+        plt.imsave(save_path, zoomed.squeeze(), cmap='gray')
 
     except Exception as e:
         print(f"Error: {e}")
 
 
 def main():
-    image_path = "Python_01_Array/ex03/animal.jpeg"
-    zoom_factor = 3
+    image_path = "Python_01_Array/images/animal.jpeg"
+    zoom_factor = 2
     zoom(image_path, zoom_factor)
 
 
