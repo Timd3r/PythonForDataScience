@@ -2,6 +2,11 @@ import sys
 
 
 def building():
+    """
+        Takes a single string argument and displays the sums of
+        its upper-case characters, lower-case characters,
+        punctuation characters, digits, and spaces.
+    """
     try:
         text = sys.argv[1]
     except (IndexError):
