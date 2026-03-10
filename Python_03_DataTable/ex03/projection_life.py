@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 
 
 def projection_life():
+    """Projection of life expectancy in 1900."""
     try:
         df_income = load("Python_03_DataTable/data/income_per_person.csv")
         df_life = load("Python_03_DataTable/data/life_expectancy_years.csv")
