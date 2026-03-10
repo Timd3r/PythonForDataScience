@@ -5,7 +5,7 @@ from load_csv import load
 def aff_life():
     """Plot the life expectancy projections for Belgium over time."""
     try:
-        df = load("Python_03_DataTable/data/life_expectancy_years.csv")
+        df = load("Python_02_DataTable/data/life_expectancy_years.csv")
         if df is None or df.empty:
             return
 
@@ -28,8 +28,10 @@ def aff_life():
 
 
 def main():
+    """Main function to execute the life expectancy plotting."""
     aff_life()
 
 
 if __name__ == "__main__":
+    """Entry point of the script."""
     main()

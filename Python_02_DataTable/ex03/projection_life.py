@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 def projection_life():
     """Projection of life expectancy in 1900."""
     try:
-        df_income = load("Python_03_DataTable/data/income_per_person.csv")
-        df_life = load("Python_03_DataTable/data/life_expectancy_years.csv")
+        df_income = load("Python_02_DataTable/data/income_per_person.csv")
+        df_life = load("Python_02_DataTable/data/life_expectancy_years.csv")
         data_1900_income = df_income["1900"]
         data_1900_life = df_life["1900"]
 
@@ -24,8 +24,10 @@ def projection_life():
 
 
 def main():
+    """Main function to execute the life expectancy projection."""
     projection_life()
 
 
 if __name__ == "__main__":
+    """Entry point of the script."""
     main()

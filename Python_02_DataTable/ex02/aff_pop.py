@@ -12,8 +12,9 @@ def to_millions(val):
 
 
 def aff_pop():
+    """Plot the population projections for Belgium and Zimbabwe over time."""
     try:
-        df = load("Python_03_DataTable/data/population_total.csv")
+        df = load("Python_02_DataTable/data/population_total.csv")
         if df.empty:
             print("No data to plot.")
             return
@@ -46,8 +47,10 @@ def aff_pop():
 
 
 def main():
+    """Main function to execute the population plotting."""
     aff_pop()
 
 
 if __name__ == "__main__":
+    """Entry point of the script."""
     main()

@@ -2,7 +2,7 @@ from load_csv import load
 
 
 def main():
-    df = load('Python_03_DataTable/data/life_expectancy_years.csv')
+    df = load('Python_02_DataTable/data/life_expectancy_years.csv')
     print(df)
 
 

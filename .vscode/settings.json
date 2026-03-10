@@ -1,3 +1,6 @@
 {
-    "python.analysis.aiHoverSummaries": false
+    "python.analysis.aiHoverSummaries": false,
+    "python.analysis.extraPaths": [
+        "./Python_03_OOP/ex01"
+    ]
 }
