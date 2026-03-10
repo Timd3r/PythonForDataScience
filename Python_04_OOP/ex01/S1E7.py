@@ -4,7 +4,9 @@ from S1E9 import Character
 class Baratheon(Character):
     """Representing the Baratheon family"""
 
-    def __init__(self, first_name: str, is_alive: bool = True, family_name: str = "Baratheon", eyes: str = "brown", hairs: str = "dark"):
+    def __init__(self, first_name: str, is_alive: bool = True,
+                 family_name: str = "Baratheon", eyes: str = "brown",
+                 hairs: str = "dark"):
         """Your docstring for Constructor"""
         super().__init__(first_name, is_alive)
         self.family_name = family_name
@@ -29,7 +31,9 @@ class Baratheon(Character):
 class Lannister(Character):
     """Representing the Lannister family"""
 
-    def __init__(self, first_name: str, is_alive: bool = True, family_name: str = "Lannister", eyes: str = "blue", hairs: str = "light"):
+    def __init__(self, first_name: str, is_alive: bool = True,
+                 family_name: str = "Lannister", eyes: str = "blue",
+                 hairs: str = "light"):
         """Your docstring for Constructor"""
         super().__init__(first_name, is_alive)
         self.family_name = family_name
@@ -37,9 +41,13 @@ class Lannister(Character):
         self.hairs = hairs
 
     def create_lannister(first_name: str, is_alive: bool = True):
+        """
+        Factory method to create a Lannister instance.
+        """
         return Lannister(first_name, is_alive)
 
     def die(self):
+        """Your docstring for Method"""
         return super().die()
 
     def __repr__(self):
