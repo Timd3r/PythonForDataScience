@@ -30,6 +30,14 @@ Examples include:
 - Zooming into images and saving output (`ex03/zoom.py`)
 - Rotating images via a manual transpose (`ex04/rotate.py`)
 
+### Python_02_DataTable
+
+Examples include:
+- CSV loading utility with dimension reporting (`ex00/load_csv.py`)
+- Plotting country-specific life expectancy over time (`ex01/aff_life.py`)
+- Comparing population projections between countries with data scaling (`ex02/aff_pop.py`)
+- Scatter plots of Life Expectancy vs Gross Domestic Income (`ex03/projection_life.py`)
+
 ### Python_03_OOP
 
 Examples include:
