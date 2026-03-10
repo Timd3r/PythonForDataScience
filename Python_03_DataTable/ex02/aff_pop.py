@@ -25,6 +25,7 @@ def aff_pop():
         le_belgium = le_belgium.apply(to_millions).to_numpy()
         le_zimbabwe = le_zimbabwe.apply(to_millions).to_numpy()
         years = Belgium_data.columns[1:].to_numpy()
+        print(le_zimbabwe[250])
 
         plt.figure(figsize=(10, 6))
         plt.plot(years[0:250], le_belgium[0:250], label="Belgium")

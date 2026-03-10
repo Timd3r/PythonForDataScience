@@ -3,6 +3,7 @@ from load_csv import load
 
 
 def aff_life():
+    """Plot the life expectancy projections for Belgium over time."""
     try:
         df = load("Python_03_DataTable/data/life_expectancy_years.csv")
         if df is None or df.empty:

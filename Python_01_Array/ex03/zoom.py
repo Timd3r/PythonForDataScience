@@ -3,6 +3,8 @@ from load_image import load_image
 
 
 def zoom(path: str, factor: int):
+    """Zooms into the center of an image by a
+    specified factor and saves the zoomed image."""
     try:
         img = load_image(path)
         if img is None:
