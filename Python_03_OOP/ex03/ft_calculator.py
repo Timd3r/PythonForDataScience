@@ -4,8 +4,10 @@ class calculator:
     on a list of numbers.
     """
 
-    def __init__(self, values):
+    def __init__(self, values: list[float] = None) -> None:
         """Initialize the calculator with a list of values."""
+        if values is None:
+            raise ValueError("Values must be provided for the calculator.")
         self.values = values
 
     def __add__(self, object) -> None:
